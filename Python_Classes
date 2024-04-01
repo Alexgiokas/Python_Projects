@@ -1,0 +1,26 @@
+# Παράδειγμα 1: Κλάση αυτοκινήτου
+class Car:
+    def __init__(self, make, model, year):
+        self.make = make
+        self.model = model
+        self.year = year
+
+    def display_info(self):
+        print(f"Αυτοκίνητο: {self.make} {self.model} του {self.year}")
+
+# Δημιουργία ενός αυτοκινήτου και εμφάνιση πληροφοριών
+my_car = Car("Toyota", "Corolla", 2020)
+my_car.display_info()
+
+# Παράδειγμα 2: Κλάση υπολογιστή
+class Computer:
+    def __init__(self, brand, model):
+        self.brand = brand
+        self.model = model
+
+    def display_info(self):
+        print(f"Υπολογιστής: {self.brand} {self.model}")
+
+# Δημιουργία ενός υπολογιστή και εμφάνιση πληροφοριών
+my_computer = Computer("Apple", "MacBook Pro")
+my_computer.display_info()
