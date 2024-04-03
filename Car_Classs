@@ -1,0 +1,29 @@
+class Car:
+    def __init__(self, make):
+        self.make = make
+        self.speed = 60
+        self.color = ""
+        self.year = ""
+
+    def speed_up(self, speed):
+        self.speed = speed
+        print("I am driving at a speed", self.speed, "km/h")
+
+    def turn(self, direction):
+        print("I am turning", direction)
+
+# Δημιουργία αντικειμένου convertible
+convertible = Car("bmw")
+convertible.color = "μαύρο"
+convertible.year = "2013"
+
+# Δημιουργία αντικειμένου sedan
+sedan = Car("toyota")
+sedan.color = "κόκκινο"
+sedan.year = "2009"
+
+# Κλήση μεθόδου για στροφή δεξιά για το αντικείμενο convertible
+convertible.turn("right")
+
+# Κλήση μεθόδου για αύξηση ταχύτητας σε 90 χλμ/ώρα για το αντικείμενο sedan
+sedan.speed_up(90)
